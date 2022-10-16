@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+body {
+    padding-top: 80px;
+}
+
+header, footer {
+    height: 80px;
+    background-color: #6F38C5;
+    position: fixed;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    width: 100%;
+    background-color: #87A2FB;
+}
+
+.convert-box {
+    background-color: #BFACE0;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #6F38C5;
+    display: flex;
+    flex-direction: column;
+}
+
+.convert-box-header, .inputValue, .answer {
+    display: flex;
+    justify-content: center;
+}
+
+.convert-box-header {
+    background-color: #6F38C5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.convert-box-header h2 {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.inputValue label {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.inputValue input {
+    border-radius: 5px;
+    outline: none;
+    height: 20px;
+    width: 50%;
+    padding-left: 8px;
+    padding: 5px;
+    border: none;
+}
+
+.inputValue input:focus {
+    border: 2px solid #6F38C5;
+}
+
+.inputValue {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.options label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.options select {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.clear, .convert {
+    padding: 10px;
+    color: white;
+    background-color: #6F38C5;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    transition: background-color 0.25s;
+}
+
+.clear:hover, .convert:hover {
+    background-color: #87A2FB;
+}
+
+.options, .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.answer label {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.answer input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    outline: none;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
